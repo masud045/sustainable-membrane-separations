@@ -12,7 +12,7 @@ except ImportError:
     sys.exit(1)
 
 # OCFE setup
-# We discretize each membrane element using Gauss-Lobatto-Legendre (GLL) points.
+# We discretize each membrane element using Gauss-Lobatto-Legendre (GLL) points or Hahn polynomial roots.
 # These are optimal for polynomial collocation because they include both endpoints
 # and cluster points near the boundaries where gradients are steepest.
 # The 5-point GLL set on [-1,1] maps to [0,1] via s = (p+1)/2.
